@@ -54,7 +54,6 @@ print("Nuevas ubicaciones para centros de carga:", nuevos_centros)
 for i, centro in enumerate(nuevos_centros, start=1):
     print(f'{{"nombre": "{i}", "lat": {centro[0]:.5f}, "lon": {centro[1]:.5f}}},')
 
-# colors = ['blue', 'green', 'orange']
 colors = ['blue', 'green', 'red', 'purple', 'brown', 'orange', 'pink', 'gray', 'olive', 'cyan']
 plt.scatter(puntos_candidatos[:, 0], puntos_candidatos[:, 1], c=[colors[label] for label in labels], label='Puntos de Demanda')
 plt.scatter(nuevos_centros[:, 0], nuevos_centros[:, 1], c='red', marker='x', label='Centros de Carga')

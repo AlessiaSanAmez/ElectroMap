@@ -54,9 +54,8 @@ ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
 plt.savefig('voronoi_diagram.png', bbox_inches='tight')
 
 # Vertices del diagrama Voronoi
+# Se guardan en EPSG:3957, para poder usarlo en mapas se necesita transformar a EPSG:3857
 vertices = vor.vertices
-# print("Voronoi Vertices Coordinates (in EPSG:3857):")
-# print(vertices)
 vertices_4326 = []
 transformer = Transformer.from_crs("EPSG:3857", "EPSG:4326")
 for x, y in vertices:
@@ -65,20 +64,12 @@ for x, y in vertices:
 # --- Imprimir en formato para codigo ---
 print(",\n".join([f"[{x:.5f}, {y:.5f}]" for x, y in vertices_4326]))
 
-# print("\nVoronoi Edges Coordinates (in EPSG:3857):")
-# edges = []
-# for ridge in vor.ridge_vertices:
-#     if -1 not in ridge:
-#         edges.append(vertices[ridge])
-# print(edges)
 
-
-# Clip Voronoi polygons to the boundary of Puebla
+# Obtener el polígono para aplicarlo al mapa del municipio de Puebla
 voronoi_polygons = [Polygon([vor.vertices[i] for i in region]) for region in vor.regions if -1 not in region]
 voronoi_gdf = gpd.GeoDataFrame(geometry=voronoi_polygons, crs=gdf_puebla.crs)
 clipped_voronoi = gpd.clip(voronoi_gdf, gdf_puebla)
 
-# Plot the clipped Voronoi diagram
 fig, ax = plt.subplots(figsize=(8, 8))
 gdf_puebla.plot(ax=ax, edgecolor='black', facecolor='none')
 clipped_voronoi.plot(ax=ax, color='blue', alpha=0.5)

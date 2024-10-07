@@ -77,15 +77,12 @@ for combination in combinations:
             distancia = haversine(coord_a, coord_b)
             tiempo_estimado = tiempoEstimado(distancia)
             
-            # Calculate the peso with the congestion factor
             peso = calc_peso(distancia, tiempo_estimado)
             peso_total += peso
-    
-    # Check if this is the best combination (with the lowest total peso)
+
     if peso_total < peso_best:
         peso_best = peso_total
         best_combination = combination
 
-# Print the best combination
 print(f"Best combination: {', '.join([c['nombre'] for c in best_combination])}")
 print(f"With total peso: {peso_best:.2f}")
