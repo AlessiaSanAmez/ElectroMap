@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+.bg-image {
+    background-image: url('../Icons/FondoC.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.bg-image h1, .bg-image p {
+    color: rgb(234, 227, 227);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+  
+  
+.container-fluid {
+    height: 100%;
+}
+  
+#background {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}

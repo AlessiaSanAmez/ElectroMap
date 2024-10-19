@@ -9,6 +9,21 @@ body {
 }
 
 
+.image-container {
+  width: 100%;
+  height: 700px; /* Ajusta la altura según necesites */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Color de fondo opcional para mostrar el área vacía */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta la imagen manteniendo su proporción, sin recortes */
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -27,6 +42,19 @@ body {
   height: 32rem;
 }
 
+#carouselExampleIndicators {
+  max-width: 300px; /* Ajusta el ancho del contenedor del carrusel */
+  max-height: 300px; /* Ajusta la altura del contenedor del carrusel */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+  margin: auto; /* Centra el carrusel dentro de su columna */
+}
+
+.carousel-item img {
+  width: 300px; /* Ajusta el ancho de las imágenes */
+  height: 300px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes se adapten al contenedor */
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -43,14 +71,6 @@ body {
 }
 /* rtl:end:ignore */
 
-.pd-placeholder-img {
-  background-image: url('../Icons/FondoC.gif');
-  background-size: cover;            
-  background-position: center 80%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
 
 .bdss-placeholder-img {
   background-image: url('../Icons/ACQ.png');
