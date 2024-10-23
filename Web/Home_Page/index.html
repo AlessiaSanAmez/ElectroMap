@@ -3,7 +3,7 @@
   <head><script src="../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
@@ -34,21 +34,23 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../Icons/EM_namealternativePNG.png" alt="Logo ElectroMap" style="max-height: 60px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" onclick="smoothScrollToCarousel()">Alineación Estratégica</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="smoothScrollToMapa()">Mapa de Puebla</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="smoothScrollToEtapas()">Etapas</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="smoothScrollToHackatronics()">Hackatronics</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="../inputTests/VoronoiHTMLTest.py">Corra el Programa</a></li> -->
-          </ul>
+            <a class="navbar-brand" href="#">
+                <img src="../Icons/EM_namealternativePNG.png" alt="Logo ElectroMap" style="max-height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" onclick="smoothScrollToCarousel()">Alineación Estratégica</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="smoothScrollToMapa()">Mapa de Puebla</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="smoothScrollToEtapas()">Etapas</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="smoothScrollToHackatronics()">Hackatronics</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+    
     </header>
 
     <script>
@@ -72,37 +74,39 @@
     
 <main>
 
-   <div class="bg-image" style="background-image: url('../Icons/FondoC.gif'); height: 50vh; position: relative;">
-    <div style="position: absolute; inset: 0; backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.6);">
-        <div class="container d-flex h-100 align-items-center justify-content-center">
-            <div class="text-center text-white">
-                <h1 class="fw-bold">Mapeando el futuro de la energía</h1>
-                <p class="lead opacity-90">
-                    ElectroMap, Es una innovación a través del desarrollo de un software para optimizar la
-                    ubicación de centros de carga para vehículos eléctricos, a fin de impulsar la transición
-                    hacia una movilidad sostenible, eficiente y de satisfacción a la demanda; poniendo a
-                    disposición de diversos tipos de usuario una plataforma web interactiva amigable.
-                </p>
-            </div>
+</head>
+<body>
+  <div class="bg-image">
+    <div class="bg-overlay">
+      <div class="container d-flex h-100 align-items-center justify-content-center">
+        <div class="text-center">
+          <h1 class="fw-bold">Mapeando el futuro de la energía</h1>
+          <p class="lead opacity-90">
+            ElectroMap es una innovación a través del desarrollo de un software para optimizar la ubicación de centros de carga para vehículos eléctricos, a fin de impulsar la transición hacia una movilidad sostenible, eficiente y de satisfacción a la demanda; poniendo a disposición de diversos tipos de usuario una plataforma web interactiva amigable.
+          </p>
         </div>
+      </div>
     </div>
-</div>
-
-  
-  
-  <div class="row featurette">
-    <h2 class="featurette-heading fw-normal lh-1">Objetivo</h2>
-    <p class="lead">Desarrollar un software para la planeación inteligente que, a través de algoritmos, determine la ubicación óptima para el proceso de instalación de centros de carga en el Estado de Puebla</p>
   </div>
+  
+  <br>
+  <div class="row featurette" style="padding: 0 1rem;">
+    <h2 class="featurette-heading fw-normal lh-1" style="font-size: 1.5rem; text-align: center; margin: 0 auto 0.5rem auto;">Objetivo</h2>
+    <p class="lead" style="padding: 0 1rem; text-align: justify;">
+        Desarrollar un software para la planeación inteligente que, a través de algoritmos, determine la ubicación óptima para el proceso de instalación de centros de carga en el Estado de Puebla
+    </p>
+  </div>
+  
 
   <hr class="featurette-divider" id="agenda2030">
 
   <div class="row featurette">
-    <div class="col-md-5 order-md-1">
-      <h2 class="featurette-heading fw-normal lh-1 text-end">Agenda 2030</h2>
+    <div class="col-md-5 order-md-1 text-end text-md-center">
+      <h2 class="featurette-heading fw-normal lh-1 text-center-small">Agenda 2030</h2>
     </div>
+  </div>
   
-    <div id="carouselExampleIndicators" class="carousel slide col-md-5 order-md-2" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide col-md-7 order-md-2" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -132,58 +136,58 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>    
-
-<br><br><br><br>
+  </div>
   
-  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Plan para el Despliegue de Cargadores de Vehículos Eléctricos en el Estado de Puebla</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">IV</h3>
-        <p>Determinar la ubicación estratégica y especificaciones técnicas para la instalación de cargadores de vehículos eléctricos en las principales zonas conurbadas del estado</p>
+
+<br><br>
+  
+<div class="container px-4 py-2" id="featured-3"> 
+  <h2 class="pb-2 border-bottom">Plan para el Despliegue de Cargadores de Vehículos Eléctricos en el Estado de Puebla</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">VI</h3>
-        <p>Acelerar la adopción de la electromovilidad en el estado, con un enfoque de cobertura en todo el territorio poblano</p>
+      <h3 class="fs-2 text-body-emphasis">IV</h3>
+      <p>Determinar la ubicación estratégica y especificaciones técnicas para la instalación de cargadores de vehículos eléctricos en las principales zonas conurbadas del estado</p>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">VII</h3>
-        <p>Contribuir al cumplimiento de las metas propuestas por México para la reducción de emisiones de Gases de Efecto Invernadero</p>
+      <h3 class="fs-2 text-body-emphasis">VI</h3>
+      <p>Acelerar la adopción de la electromovilidad en el estado, con un enfoque de cobertura en todo el territorio poblano</p>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
+      <h3 class="fs-2 text-body-emphasis">VII</h3>
+      <p>Contribuir al cumplimiento de las metas propuestas por México para la reducción de emisiones de Gases de Efecto Invernadero</p>
     </div>
   </div>
+</div>
 
-  
-  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Plan Estatal de Desarrollo del Estado de Puebla 2019 – 2024</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">5</h3>
-        <p>Impulsar acciones de investigación y aquellas que fomenten el uso de tecnologías orientadas a la conservación del medio ambiente y a la atención del cambio climático</p>
+<div class="container px-4 py-2" id="featured-3"> 
+  <h2 class="pb-2 border-bottom">Plan Estatal de Desarrollo del Estado de Puebla 2019 – 2024</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">11</h3>
-        <p>Promover el uso de tecnologías limpias e innovadoras para eficientar el desarrollo económico, social y la transición energética</p>
+      <h3 class="fs-2 text-body-emphasis">5</h3>
+      <p>Impulsar acciones de investigación y aquellas que fomenten el uso de tecnologías orientadas a la conservación del medio ambiente y a la atención del cambio climático</p>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-        </div>
-        <h3 class="fs-2 text-body-emphasis">12</h3>
-        <p>Mejorar la infraestructura con un enfoque en la generación de energías alternativas, que permitan el desarrollo sostenible, productivo y social</p>
+      <h3 class="fs-2 text-body-emphasis">11</h3>
+      <p>Promover el uso de tecnologías limpias e innovadoras para eficientar el desarrollo económico, social y la transición energética</p>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
       </div>
+      <h3 class="fs-2 text-body-emphasis">12</h3>
+      <p>Mejorar la infraestructura con un enfoque en la generación de energías alternativas, que permitan el desarrollo sostenible, productivo y social</p>
     </div>
   </div>
+</div>
 
 
   <div class="container marketing">
@@ -195,109 +199,111 @@
         </div>
       </div>
       
-      <!-- Mapa de Leaflet, debajo del texto -->
-      <div class="row">
-        <div class="col-md-12">
-          <div id="map" style="width: 70%; height: 500px; margin: 0 auto;"></div>
-        </div>
-      </div>
-      
-      <script>
-        var map = L.map('map').setView([19.0433, -98.1986], 18);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 13,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+     <!-- Mapa de Leaflet, debajo del texto -->
+<div class="row">
+  <div class="col-md-12">
+    <div id="map" class="img-fluid" style="width: 100%; height: 500px; margin: 0 auto;"></div>
+  </div>
+</div>
 
-        var centros_carga = [
-            {"nombre": "Parque Ecológico Zona 1", "lat": 19.023934964947465, "lon": -98.19086182319907},
-            {"nombre": "Parque Ecológico Zona 2", "lat": 19.02645263253028, "lon": -98.18615931766742},
-            {"nombre": "Centro de Convenciones", "lat": 19.043288, "lon": -98.191392},
-            {"nombre": "Zona Los Fuertes", "lat": 19.057078, "lon": -98.183774},
-            {"nombre": "Centro Expositor", "lat": 19.059195795750288, "lon": -98.18113773541947},
-            {"nombre": "Mercedes-Benz", "lat": 19.015830605910985, "lon": -98.25505568911856},
-            {"nombre": "Tesla Charger - Solesta", "lat": 19.037843139644565, "lon": -98.22920118256935},
-            {"nombre": "Chevrolet", "lat": 19.02163244026228, "lon": -98.25267738876323},
-            {"nombre": "Tesla Charger - Angelopolis", "lat": 19.013140490360847, "lon": -98.24553245644337},
-            {"nombre": "Tesla Charger - Animas", "lat": 19.050579007621728, "lon": -98.23450884657841},
-            {"nombre": "Tesla Charger - Analco", "lat": 19.040263080452775, "lon": -98.18920286277289},
-            {"nombre": "Tesla Charger - Ikea", "lat": 19.027432446573208, "lon": -98.23637255184909},
-            {"nombre": "Tesla Charger - Centro", "lat": 19.04616300185802, "lon": -98.18942555533113},
-            {"nombre": "Tesla Charger - Convento", "lat": 19.045596717489577, "lon": -98.18925990138358},
-            {"nombre": "Tesla Charger - Triangulo", "lat": 19.043126732422195, "lon": -98.23628403630079},
-            {"nombre": "BMW Station", "lat": 19.034603796048074, "lon": -98.22919598684334}
-        ];
+<script>
+  var map = L.map('map').setView([19.0433, -98.1986], 18);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 13,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
 
-        centros_carga.forEach(function(carga) {
-            L.circle([carga.lat, carga.lon], {
-                color: 'red',
-                radius: 20
-            }).addTo(map).bindPopup(carga.nombre);
-        });
-      
-        $.ajax({
-          url: '../../Recursos/Zona_Urbana_2023.geojson',
-          success: function (data) {
-            var geojson = new L.geoJson(data, {
-              style: {"color":"#2ECCFA","weight":2}
-            }).addTo(map);
-            map.fitBounds(geojson.getBounds());
-          }
-        });
-      </script>
-      
-       <hr class="featurette-divider" id="etapas">
+  var centros_carga = [
+    {"nombre": "Parque Ecológico Zona 1", "lat": 19.023934964947465, "lon": -98.19086182319907},
+    {"nombre": "Parque Ecológico Zona 2", "lat": 19.02645263253028, "lon": -98.18615931766742},
+    {"nombre": "Centro de Convenciones", "lat": 19.043288, "lon": -98.191392},
+    {"nombre": "Zona Los Fuertes", "lat": 19.057078, "lon": -98.183774},
+    {"nombre": "Centro Expositor", "lat": 19.059195795750288, "lon": -98.18113773541947},
+    {"nombre": "Mercedes-Benz", "lat": 19.015830605910985, "lon": -98.25505568911856},
+    {"nombre": "Tesla Charger - Solesta", "lat": 19.037843139644565, "lon": -98.22920118256935},
+    {"nombre": "Chevrolet", "lat": 19.02163244026228, "lon": -98.25267738876323},
+    {"nombre": "Tesla Charger - Angelopolis", "lat": 19.013140490360847, "lon": -98.24553245644337},
+    {"nombre": "Tesla Charger - Animas", "lat": 19.050579007621728, "lon": -98.23450884657841},
+    {"nombre": "Tesla Charger - Analco", "lat": 19.040263080452775, "lon": -98.18920286277289},
+    {"nombre": "Tesla Charger - Ikea", "lat": 19.027432446573208, "lon": -98.23637255184909},
+    {"nombre": "Tesla Charger - Centro", "lat": 19.04616300185802, "lon": -98.18942555533113},
+    {"nombre": "Tesla Charger - Convento", "lat": 19.045596717489577, "lon": -98.18925990138358},
+    {"nombre": "Tesla Charger - Triangulo", "lat": 19.043126732422195, "lon": -98.23628403630079},
+    {"nombre": "BMW Station", "lat": 19.034603796048074, "lon": -98.22919598684334}
+  ];
 
-       <div class="featurette-heading">
-        <h2 class="featurette-heading fw-normal lh-1">Etapas</h2>
-       </div>
+  centros_carga.forEach(function(carga) {
+    L.circle([carga.lat, carga.lon], {
+      color: 'red',
+      radius: 20
+    }).addTo(map).bindPopup(carga.nombre);
+  });
 
-       <div class="row featurette">
-        <div class="col-md-15">
-            <h2 class="featurette-heading fw-normal lh-1 fs-3">Primera: <span class="text-body-secondary">Evaluación de la cobertura de la red de carga eléctrica en Puebla mediante el Diagrama de Voronoi</span></h2>
-            <p class="lead">Creación de un mapa de influencia para cada centro de carga existente. Las zonas más grandes y alejadas de los centros actuales se identifican como potenciales ubicaciones para nuevos centros de carga, con el objetivo de mejorar la cobertura y eficiencia del servicio</p>
-        </div>
-        <div class="col-md-15 justify-content-center align-items-center">
-          <div class="row">
-              <div class="col-md-6">
-                  <div class="image-container">
-                      <img src="../Icons/VoronoiPuebla.png" alt="Primera Visualización del Algoritmo de Voronoi" class="img-fluid">
-                  </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <div class="image-container">
-                    <img src="../Icons/VoronoiCentrosExistentes.png" alt="Visualización del Diagrama de Voronoi Recortado" class="img-fluid">
-                </div>
-            </div>
-            
-            <div class="row featurette my-3">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1 fs-3">Segunda: <span class="text-body-secondary"> Optimización de la ubicación de centros de carga en Puebla utilizando K-means</span></h2>
-                    <p class="lead">Utilizando los datos de posibles ubicaciones para centros de carga, se agrupan mediante el algoritmo. Los centros de estos grupos representan las ubicaciones óptimas para los nuevos centros de carga, asegurando una distribución equitativa y eficiente del servicio</p>
-                </div>
-                <div class="col-md-5 d-flex justify-content-center align-items-center">
-                    <img src="../Icons/Kmeans.png" alt="Visualización de la Aplicación del Algoritmo K-Means en las posibles ubicaciones" class="img-fluid" style="max-width: 100%; height: auto;" />
-                </div>
-            </div>
-            
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1 fs-3">Tercera: <span class="text-body-secondary"> Selección de las mejores ubicaciones mediante Heurísticas basada en TSP</span></h2>
-                <p class="lead">Se evalúan todas las posibles combinaciones de 5 nuevos centros de carga, calculando la distancia y el tiempo de viaje entre ellos y los existentes. La mejor combinación es aquella que minimiza la distancia total y el tiempo de recorrido, asegurando una ruta eficiente y óptima para los vehículos que abastecen los centros de carga</p>
-            </div>
-            <div class="col-md-5 d-flex justify-content-center align-items-center">
-                <img src="../Icons/TSP.png" alt="Selección de la mejor combinación con base en el peso asignado por el TSP" class="img-fluid" style="max-width: 100%; height: auto;" />
-        </div>
+  $.ajax({
+    url: '../../Recursos/Zona_Urbana_2023.geojson',
+    success: function(data) {
+      var geojson = new L.geoJson(data, {
+        style: {"color": "#2ECCFA", "weight": 2}
+      }).addTo(map);
+      map.fitBounds(geojson.getBounds());
+    }
+  });
+</script>
 
-        <div class="row featurette">
-          <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1 fs-3">Cuarta: <span class="text-body-secondary"> Propuesta de los nuevos centros de carga</span></h2>
-              <p class="lead">Se combinan las ubicaciones óptimas encontradas por los diferentes algoritmos y se visualizan en un mapa utilizando un diagrama de Voronoi. Este diagrama muestra las áreas de influencia de cada centro de carga, permitiendo evaluar la cobertura y distribución de los nuevos puntos de carga en la ciudad</p>
-          </div>
-          <div class="col-md-5 d-flex justify-content-center align-items-center">
-              <img src="../Icons/VoronoiConsolidados.png" alt="Visualización de las Propuestas Definitivas para los Centros de Carga" class="img-fluid" style="max-width: 100%; height: auto;" />
-        </div>
+<hr class="featurette-divider" id="etapas">
+
+<div class="featurette-heading">
+  <h2 class="featurette-heading fw-normal lh-1">Etapas</h2>
+</div>
+
+<div class="row featurette">
+  <div class="col-md-12">
+    <h2 class="featurette-heading fw-normal lh-1 fs-3">Primera: <span class="text-body-secondary">Evaluación de la cobertura de la red de carga eléctrica en Puebla mediante el Diagrama de Voronoi</span></h2>
+    <p class="lead">Creación de un mapa de influencia para cada centro de carga existente. Las zonas más grandes y alejadas de los centros actuales se identifican como potenciales ubicaciones para nuevos centros de carga, con el objetivo de mejorar la cobertura y eficiencia del servicio.</p>
+  </div>
+  <div class="col-md-6">
+    <div class="image-container">
+      <img src="../Icons/VoronoiPuebla.png" alt="Primera Visualización del Algoritmo de Voronoi" class="img-fluid">
     </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="image-container">
+      <img src="../Icons/VoronoiCentrosExistentes.png" alt="Visualización del Diagrama de Voronoi Recortado" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<div class="row featurette my-5"> 
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1 fs-3">Segunda: <span class="text-body-secondary"> Optimización de la ubicación de centros de carga en Puebla utilizando K-means</span></h2>
+    <p class="lead">Utilizando los datos de posibles ubicaciones para centros de carga, se agrupan mediante el algoritmo. Los centros de estos grupos representan las ubicaciones óptimas para los nuevos centros de carga, asegurando una distribución equitativa y eficiente del servicio.</p>
+  </div>
+  <div class="col-md-5 d-flex justify-content-center align-items-center">
+    <img src="../Icons/Kmeans.png" alt="Visualización de la Aplicación del Algoritmo K-Means en las posibles ubicaciones" class="img-fluid">
+  </div>
+</div>
+
+<div class="row featurette my-5"> 
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1 fs-3">Tercera: <span class="text-body-secondary"> Selección de las mejores ubicaciones mediante Heurísticas basada en TSP</span></h2>
+    <p class="lead">Se evalúan todas las posibles combinaciones de 5 nuevos centros de carga, calculando la distancia y el tiempo de viaje entre ellos y los existentes. La mejor combinación es aquella que minimiza la distancia total y el tiempo de recorrido, asegurando una ruta eficiente y óptima para los vehículos que abastecen los centros de carga.</p>
+  </div>
+  <div class="col-md-5 d-flex justify-content-center align-items-center">
+    <img src="../Icons/TSP.png" alt="Selección de la mejor combinación con base en el peso asignado por el TSP" class="img-fluid">
+  </div>
+</div>
+
+<div class="row featurette my-5"> 
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1 fs-3">Cuarta: <span class="text-body-secondary"> Propuesta de los nuevos centros de carga</span></h2>
+    <p class="lead">Se combinan las ubicaciones óptimas encontradas por los diferentes algoritmos y se visualizan en un mapa utilizando un diagrama de Voronoi. Este diagrama muestra las áreas de influencia de cada centro de carga, permitiendo evaluar la cobertura y distribución de los nuevos puntos de carga en la ciudad.</p>
+  </div>
+  <div class="col-md-5 d-flex justify-content-center align-items-center">
+    <img src="../Icons/VoronoiConsolidados.png" alt="Visualización de las Propuestas Definitivas para los Centros de Carga" class="img-fluid">
+  </div>
+</div>
+
+
     
       <hr class="featurette-divider">
   
@@ -351,17 +357,21 @@
 
   <hr class="featurette-divider" id="hackatronics">
 
-  <div class="row featurette">
-    <div class="col-md-8">
-      <div class="d-flex align-items-center justify-content-center">
-        <img src="../Icons/Team.png" alt="Foto Hackatronics" class="img-fluid">
+  <div class="container px-4">
+    <div class="row featurette">
+      <div class="col-md-8">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="../Icons/Team.png" alt="Foto Hackatronics" class="img-fluid" style="margin-bottom: 1.5rem;">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="featurette-heading fw-normal lh-1 fs-3">Hackatronics</h2>
+        <p class="lead">Es un equipo dedicado a crear soluciones tecnológicas innovadoras con impacto global. Su lema "Solucionando - Trabajando - Mejorando" encapsula su filosofía de abordar problemas complejos mediante esfuerzo constante y evolución. Impulsados por la pasión por la ingeniería mecatrónica y de software, los miembros se esfuerzan por desarrollar aplicaciones prácticas y eficientes que generen un cambio positivo en la sociedad.</p>
       </div>
     </div>
-    <div class="col-md-4">
-      <h2 class="featurette-heading fw-normal lh-1 fs-3">Hackatronics</h2>
-      <p class="lead">Es un equipo dedicado a crear soluciones tecnológicas innovadoras con impacto global. Su lema "Solucionando - Trabajando - Mejorando" encapsula su filosofía de abordar problemas complejos mediante esfuerzo constante y evolución. Impulsados por la pasión por la ingeniería mecatrónica y de software, los miembros se esfuerzan por desarrollar aplicaciones prácticas y eficientes que generen un cambio positivo en la sociedad.</p>
-    </div>
   </div>
+  
+  
   
    
   <hr class="featurette-divider">
@@ -400,4 +410,4 @@
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
-</html>
+</html> 
